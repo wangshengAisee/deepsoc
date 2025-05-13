@@ -56,7 +56,7 @@ def call_llm(system_prompt, user_prompt, history=None, temperature=None, long_te
         "Content-Type": "application/json",
         "Authorization": f"Bearer {LLM_API_KEY}"
     }
-    
+    print(f'{LLM_BASE_URL}/chat/completions , data={data}')
     response = requests.post(
         f"{LLM_BASE_URL}/chat/completions",
         headers=headers,

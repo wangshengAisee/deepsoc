@@ -41,6 +41,7 @@ instance/
 .vscode/
 *.swp
 *.swo
+.env
 
 # 其他
 .coverage
